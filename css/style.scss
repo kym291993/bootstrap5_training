@@ -1,0 +1,665 @@
+
+body 
+{
+    font-family: 'Gotham Rounded'; 
+    
+}
+
+
+section
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+.gray-back
+{
+    background: #f3f5f8;
+ 
+} 
+
+.decorate-title
+{
+    margin-top:120px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #353535;
+    position: relative;
+    margin-bottom: 114px;
+
+    span 
+    {
+        position: absolute;
+        bottom: -44px;
+        width: 380px;
+        background: url(../img/down.png) no-repeat;
+        display: flex;
+        height: 16px;
+        align-items: center;
+        background-position: center;
+        background-size: contain;
+        
+        &::before
+        {
+            width: 220px;     
+            border-top:3px dotted #d2d7dd; 
+            content: "";
+            position: absolute;
+            left:-75px;
+        }
+        &::after 
+        {
+            width: 220px;            
+            border-top:3px dotted #d2d7dd;             
+            content: "";
+            position: absolute;
+            right:-75px;
+        } 
+    }
+}
+
+
+nav
+{
+    
+    position: absolute;
+    color: #353535;
+    width: 100%;
+    margin-top: 55px;
+    font-size: 35px;
+
+    button 
+    {
+        background: none;
+        border: none;
+    }
+   
+    
+   
+}
+
+
+.main-banner
+{
+    
+    width: 100%;
+    background: url(../img/background.jpg);
+    background-size: cover;
+
+    .container 
+    {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+
+        h1 
+        {
+            font-weight: 400;
+            font-size: 46px;
+            letter-spacing: 14px;
+            margin-top: 280px;
+            text-align: center;
+            color: #353535;
+            span 
+            {
+                color: #a1a9b0;
+            }
+        }
+        p 
+        {
+            margin-top: 10px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            color: #8c9398;
+            span 
+            {
+                font-weight: 600;
+                font-style: italic;
+            }
+        }
+
+        button 
+        {
+            background: #3dc9b3;
+            border: none;
+            color: white;
+            margin-top: 55px;
+            width: 225px;
+            height: 70px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 382px;
+        }
+      
+    }
+}
+
+.about
+{
+ .text 
+ {
+     font-weight: 500;
+     font-size: 17px;
+     letter-spacing: 1px;
+     line-height: 32px;
+     margin-bottom: 130px;
+     color: #8c9398;
+
+     span 
+     {
+         color: #353535;
+     }
+
+ }
+
+ 
+  
+}
+
+.service
+{
+    padding-bottom: 110px;
+    .item 
+    {
+        padding-top: 20px;
+        img
+        {
+           width: 180px;
+        }
+
+        h3 
+        {
+            margin-top: 50px;
+            font-size: 18px;
+            color: 353535;
+            font-weight: 600;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+
+            &::before
+            {
+                position: absolute;
+                content: "";
+                background: #3dc9b3;
+                width: 36px;
+                height: 4px;
+                bottom: 18px;
+            } 
+           
+
+          
+
+
+        }
+        p 
+        {
+            font-size: 17px;
+            color: #8c9398;
+            font-weight: 500;
+        }
+       
+    }
+}
+
+.slider
+{
+    
+  
+    
+    position: relative;
+
+    .back 
+    {
+        background: url(../img/sliderbg.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+    }
+    .carousel-item
+    {
+       
+        p 
+        {
+            font-size: 17px;
+            color: #8c9398;
+            font-weight: 400;
+        }
+
+    }
+    .carousel-indicators
+    {
+        margin-top: 145px;
+        display: flex;
+        justify-content: center;
+        height:15px;
+        position: static;
+        margin-bottom: 150px;
+        button 
+        {
+            background: none;
+            width: 15px;
+            height:15px;
+            border: #8c9398 solid 2px;
+           
+            box-sizing: border-box;
+            border-radius: 100%;
+            display: flex;
+            &.active 
+            {background: #353535;}
+           
+        }
+    }
+
+  
+}
+
+.slogan 
+{
+    background: url(../img/bg2.jpg);
+    background-size: cover;
+
+    h2 
+    {
+        margin-top: 88px;
+        font-size: 45px;
+        font-weight: 400;
+        letter-spacing: 14px;
+    } 
+    h3 
+    {
+      margin-top: 18px;
+      font-weight: 400;
+      letter-spacing: 8px;
+      span 
+      {
+          font-style: italic;
+      }  
+      margin-bottom: 40px; 
+    }
+    a 
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #3dc9b3;
+        margin-bottom: 60px;
+        text-decoration: none;
+        i
+        {
+            color: white;
+            font-size: 25px;
+        } 
+    }
+   
+
+}
+.blog 
+{
+    .carousel-item .item 
+    {
+        .image 
+        {
+            margin-top: 120px;
+            position: relative;
+            a 
+            {
+                top: 0;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                background: #3dc9b4a6;
+                opacity: 0;
+                text-decoration: none;
+                color: white;
+                justify-content: center;
+
+                i 
+                {
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                }
+                span 
+                {
+                    font-size: 16px;
+                }
+
+            }
+            &:hover 
+            {
+                a 
+                {
+                    opacity: 1;
+                  
+                 
+
+                }
+            }
+          
+        }
+      
+        h3 
+        {
+            margin-top: 50px;
+            font-size: 18px;
+            color: 353535;
+            font-weight: 600;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+
+            &::before
+            {
+                position: absolute;
+                content: "";
+                background: #3dc9b3;
+                width: 36px;
+                height: 4px;
+                bottom: 18px;
+            } 
+        }
+        p
+        {
+            font-size: 17px;
+            color: #8c9398;
+            font-weight: 500;
+        }
+    }
+    .carousel-indicators
+    {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        height:15px;
+        position: static;
+        margin-bottom: 115px;
+        button 
+        {
+            background: none;
+            width: 15px;
+            height:15px;
+            border: #8c9398 solid 2px;
+           
+            box-sizing: border-box;
+            border-radius: 100%;
+            display: flex;
+            &.active 
+            {background: #353535;}
+           
+        }
+    }
+}
+.passion 
+{
+    background: #242830;
+
+    button 
+    {
+        width: 340px;
+        margin-top: 70px;
+        height: 85px;
+        background: none;
+        letter-spacing: 2px;
+        color: white;
+        font-size: 18px;
+        margin-bottom: 70px;
+        border: solid white 1px;
+
+    }
+}
+.client 
+{
+    .decorate-title
+    {
+        margin-top: 90px;
+        margin-bottom: 0;
+    }
+
+    .carousel-item .item 
+    {
+        margin-top: 114px;
+        img
+        {
+            width: 230px;
+        }
+      
+        h3 
+        {
+            margin-top: 50px;
+            font-size: 18px;
+            color: 353535;
+            font-weight: 600;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+
+            &::before
+            {
+                position: absolute;
+                content: "";
+                background: #3dc9b3;
+                width: 36px;
+                height: 4px;
+                bottom: 18px;
+            } 
+        }
+        p
+        {
+            font-size: 17px;
+            color: #8c9398;
+            font-weight: 500;
+        }
+        .links
+        {
+            a 
+            {
+                display: flex;
+                width: 42px;
+                height: 42px;
+                background: #242830;
+                border-radius: 100%;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
+
+                &:hover 
+                {
+                    background: #3dc9b3;
+                }
+                i 
+                {
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .carousel-indicators
+    {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        height:15px;
+        position: static;
+        margin-bottom: 115px;
+        button 
+        {
+            background: none;
+            width: 15px;
+            height:15px;
+            border: #8c9398 solid 2px;
+           
+            box-sizing: border-box;
+            border-radius: 100%;
+            display: flex;
+            &.active 
+            {background: #353535;}
+           
+        }
+    }
+}
+.subscribe
+{
+    background: url(../img/bg3.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+
+    i 
+    {
+       
+        margin-top: 135px;
+        font-size: 30px;
+        margin-bottom: 22px;
+    }
+    p
+    {
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+    form 
+    {
+        margin-bottom: 175px;
+        input 
+        {
+            height: 80px;
+            width: 400px;
+            border: 1px solid white;
+            background: none;
+            color: white;
+            font-size: 18px;
+        }
+        button
+        {
+            height: 80px;
+            padding: 0 30px;
+           
+            font-size: 18px;
+            color: white;
+            background: #3dc9b3;
+            border: none;
+        }
+    }
+   
+   
+}
+.top-bt
+{
+    a 
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #3dc9b3;
+        text-decoration: none;
+        i
+        {
+            color: white;
+            font-size: 25px;
+        } 
+    }
+}
+.contact
+{
+    .decorate-title
+    {
+        margin-top: 135px;
+        margin-bottom: 150px;
+    }
+
+    .contact-items
+    {
+        margin-bottom: 110px;
+        i 
+        {
+            margin-top: 30px;
+            font-size: 30px;
+            margin-bottom: 8px;
+            &.fa-paper-plane
+            {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+        }
+        h4
+        {
+            color: #3dc9b3;
+            font-weight: 400px;
+            letter-spacing: 2px;
+            font-size: 16px;
+            margin-bottom: 24px;
+
+        }
+        p 
+        {
+            font-weight: 600;
+            color: #8c9398;
+            margin-bottom: 30px;
+        }
+
+
+    }
+
+    .links
+    {
+        margin-bottom: 140px;
+        a 
+        {
+            display: flex;
+            width: 42px;
+            height: 42px;
+            background: #242830;
+            border-radius: 100%;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+
+            &:hover 
+            {
+                background: #3dc9b3;
+            }
+            i 
+            {
+                color: white;
+                font-size: 18px;
+            }
+        }
+    }
+
+    
+}
+footer 
+{
+    background: #242830;
+    color: white;
+    p
+    {
+        margin-top: 55px;   
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+     
+}
+
+
+
